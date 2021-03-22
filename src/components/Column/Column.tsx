@@ -34,6 +34,7 @@ export const Column: React.FC<ColumnProps & OwnProps> =
     <ul>
       <h1>{heading}</h1>
       {cards.map((card) => {
+        console.log(card);
         return (
           <li key={card.id}>
             {card.text}
