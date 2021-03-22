@@ -10,6 +10,7 @@ export const AddCard: React.FC<AddCardProps> = ({ createCard }): JSX.Element => 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>): void => {
     event.preventDefault();
     const inputText = window.prompt('Add A Task');
+    console.log('test')
     
     if (inputText) {
       const card = {
